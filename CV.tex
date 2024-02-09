@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+%\usepackage{draftwatermark}
+% \SetWatermarkScale{0.5}
+%\SetWatermarkText{latexstudio.net}
+\usepackage[left=0.35in,top=0.20in,right=0.35in,bottom=0.50in]{geometry} % Document margins
+\geometry{paperheight=29.7cm}
+\usepackage{paralist}
+%\linespread{0.5}
+\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{fontawesome}% github, LinkedIn and email icon
+\usepackage[hidelinks]{hyperref}
+\usepackage[sc]{mathpazo}
+%\linespread{1.05}         % Palatino needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+\usepackage[letterspace=40]{microtype} % Single line spacing
+\usepackage{fancyhdr}% for page number in the footage 
+\usepackage{setspace}% change spacing locally for publications and talks - not elegant
+\usepackage{etaremune}% enumerate in reverse. That's silly. Used for publications.
+\usepackage{academicons}% google scholar icon
+\usepackage[UTF8]{ctex}
+
+%\fancypagestyle{plain}{%
+%\fancyhf{} % clear all header and footer fields
+%\fancyhead[r]{\LaTeX ~StuDio $\cdot$ latexstudio@yeah.net  %$\cdot$ \thepage  
+%} % except the center
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}}
+% \renewcommand{\href}{}
+
+\newcommand{\myname}{\underline{{\textbf{R. Jing}}}}
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{\aiDoi: \doilink{#1}}
+\newcommand\arxivlink[1]{\href{https://arxiv.org/abs/#1}{#1}}
+\newcommand\arxiv[1]{\aiarXiv arXiv: \arxivlink{#1}}
+\newcommand\textbfit[1]{\textbf{\textit{#1}}}
+% \newcommand\it[1]{\textit{#1}}
+\usepackage{soul} % for better underline, \ul
+
+
+\name{\sc Ran Jing } % Your name
+\address{
+{\Large \faMapMarker} 750 Commonwealth Avenue, Brookline, MA 02446\quad
+{\Large \faMobilePhone} +1 5088732952 \quad
+{\Large \faEnvelopeO} \href{mailto:rjing@bu.edu}{rjing@bu.edu}
+} 
+% Your phone number and email
+\address {
+{\Large\href{https://github.com/rjingHD}{\faGithub}} \href{https://github.com/rjingHD}{github.com/rjingHD}\quad
+{\Large\href{https://scholar.google.com/citations?user=XHLsDiwAAAAJ&hl=en}{\aiGoogleScholar}} \href{https://scholar.google.com/citations?user=XHLsDiwAAAAJ&hl=en}{scholar.google.com}\quad
+{\Large \href{https://www.linkedin.com/in/rjinghd/}{\faLinkedinSquare }} \href{https://www.linkedin.com/in/rjinghd/}{linkedin.com/in/rjinghd/}\quad
+{\Large \href{http://rjinghd.tech/}{\faLink}} \href{http://rjinghd.tech/}{rjinghd.tech/}\quad
+}
+\begin{document}
+% \pagestyle{empty}
+
+%% JOB OBJECTIVE SECTION
+% \begin{center}
+%     \textbf{Seeking for internship on soft robot control, robot learning and reinforcement learning.}
+% \end{center}
+
+\begin{rSection}{\sc Education}
+    \input{sub/edu_bu}
+    \input{sub/edu_wpi}
+    \input{sub/edu_sdu}
+    % \input{sub/CUG}
+\end{rSection}
+
+\vspace*{0.5\baselineskip} 
+\begin{rSection}{\sc Work Experience}
+    \input{sub/work_BU_GRA}
+    \input{sub/work_WPI_GRA}
+    \input{sub/work_BU_GST}
+    
+\end{rSection}
+
+\vspace*{0.5\baselineskip} 
+\begin{rSection}{\sc Publications}
+    \input{sub/publications}
+\end{rSection}
+
+\vspace*{0.5\baselineskip} 
+\begin{rSection}{\sc Talks and Presentations}
+    \input{sub/presentation}
+\end{rSection}
+
+\vspace*{0.5\baselineskip} 
+\begin{rSection}{\sc Relevant Projects} % Notable Projects
+    \input{sub/project_proprioception}
+    \input{sub/project_dismech}
+    \input{sub/project_horton}
+    \input{sub/project_clustering_based_dp}
+    \input{sub/project_franka_3d_scan}
+    % \input{sub/example_cancer}
+\end{rSection}
+
+\vspace*{0.5\baselineskip} 
+\begin{rSection}{\sc Awards}
+    \input{sub/awards}
+\end{rSection}
+
+\vspace*{0.5\baselineskip} 
+\begin{rSection}{\sc Outreach and Services}
+    \input{sub/outreach_and_service}
+\end{rSection}
+
+\vspace*{0.5\baselineskip} 
+\begin{rSection}{\sc Technical and Soft Skills}
+    \input{sub/skills}
+\end{rSection}
+
+\pagestyle{fancy}
+% Clear the header and footer
+\fancyfoot{}
+\cfoot{\thepage} % Set the center of the footer to be the page number
+%\fancyfoot[R]{\thepage} % Set the right side of the footer to be the page number
+
+\end{document}
