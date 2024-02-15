@@ -56,6 +56,7 @@
 \newcommand\doi[1]{\aiDoi: \doilink{#1}}
 \newcommand\arxivlink[1]{\href{https://arxiv.org/abs/#1}{#1}}
 \newcommand\arxiv[1]{\aiarXiv arXiv: \arxivlink{#1}}
+\newcommand\pdflink[1]{\href{#1}{\faFilePdfO: download.}}
 \newcommand\textbfit[1]{\textbf{\textit{#1}}}
 % \newcommand\it[1]{\textit{#1}}
 \usepackage{soul} % for better underline, \ul
@@ -74,6 +75,7 @@
 {\Large \href{https://www.linkedin.com/in/rjinghd/}{\faLinkedinSquare }} \href{https://www.linkedin.com/in/rjinghd/}{linkedin.com/in/rjinghd/}\quad
 {\Large \href{http://rjinghd.tech/}{\faLink}} \href{http://rjinghd.tech/}{rjinghd.tech/}\quad
 }
+
 \begin{document}
 % \pagestyle{empty}
 
@@ -108,7 +110,8 @@
 \end{rSection}
 
 \vspace*{0.5\baselineskip} 
-\begin{rSection}{\sc Relevant Projects} % Notable Projects
+%\begin{rSection}{\sc Relevant Projects} 
+\begin{rSection}{\sc Notable Projects}
     \input{sub/project_proprioception}
     \input{sub/project_dismech}
     \input{sub/project_horton}
